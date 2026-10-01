@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Restricted Area</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 520px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #10b981;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            margin: 0 0 12px 0;
+            font-size: 24px;
+            color: #38bdf8;
+        }
+        p {
+            color: #94a3b8;
+            line-height: 1.6;
+            margin: 0 0 20px 0;
+        }
+        .info-box {
+            background-color: #0f172a;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: monospace;
+            font-size: 14px;
+            color: #a5f3fc;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Authenticated (200 OK)</span>
+        <h1>Admin Control Panel</h1>
+        <p>Xác thực HTTP Basic Authentication thành công! Chào mừng <strong>admin_user</strong>.</p>
+        <div class="info-box">
+            <div><strong>Endpoint:</strong> /admin</div>
+            <div><strong>Auth Type:</strong> HTTP Basic Auth (.htpasswd)</div>
+            <div><strong>Status:</strong> 200 OK</div>
+        </div>
+    </div>
+</body>
+</html>
